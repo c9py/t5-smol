@@ -12,6 +12,7 @@ git xet install
 git clone https://huggingface.co/google-t5/t5-small
 
 # If you want to clone without large files - just their pointers
+# (useful for quick inspection of model metadata without downloading weights)
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/google-t5/t5-small
 ```
 
@@ -30,6 +31,9 @@ hf download google-t5/t5-small
 #### Other platforms
 
 ```bash
+# Install the HuggingFace CLI (if not already installed)
+# See https://huggingface.co/docs/huggingface_hub/guides/cli for installation instructions
+
 # Download the model
 hf download google-t5/t5-small
 ```
